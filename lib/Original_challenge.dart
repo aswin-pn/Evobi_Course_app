@@ -20,31 +20,31 @@ class OriginalChallenge extends StatelessWidget {
                 height: 35,
                 width: 50,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 232, 233, 237),
+                  color: const Color.fromARGB(255, 232, 233, 237),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: GestureDetector(
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(Icons.arrow_back)),
+                    child: const Icon(Icons.arrow_back)),
               ),
             ),
-            Spacer(),
+            const Spacer(),
           ],
         ),
-        body: Column(
+        body: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+              padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
               child: Text(
                 'VLSI\nDesign 1',
                 style: TextStyle(fontSize: 20),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+              padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
               child: Divider(
                 color: Color.fromARGB(255, 232, 233, 237),
               ),

@@ -16,11 +16,11 @@ class FirstPage extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SecondPage()),
+                MaterialPageRoute(builder: (context) => const SecondPage()),
               );
             },
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+            child: const Padding(
+              padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
               child: CircleAvatar(
                 radius: 14,
                 child: Icon(Icons.person),
@@ -29,21 +29,25 @@ class FirstPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 320,
           ),
-          Icon(
+          const Icon(
             Icons.notifications,
           ),
         ])
       ]),
       body: SingleChildScrollView(
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [Colors.white, Colors.blue.shade100],
+              colors: [
+                Colors.white,
+                Color.fromARGB(255, 192, 223, 248),
+                Color.fromARGB(255, 192, 223, 248)
+              ],
             ),
           ),
           child: Center(
@@ -53,7 +57,7 @@ class FirstPage extends StatelessWidget {
                 child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(17),
-                        color: Color.fromARGB(255, 232, 233, 237)),
+                        color: const Color.fromARGB(255, 232, 233, 237)),
                     height: 50,
                     width: 400,
                     child: const Row(
@@ -83,7 +87,7 @@ class FirstPage extends StatelessWidget {
                     height: 150,
                     width: 150,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 232, 233, 237),
+                      color: const Color.fromARGB(255, 232, 233, 237),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Column(
@@ -107,7 +111,7 @@ class FirstPage extends StatelessWidget {
                   height: 150,
                   width: 150,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 239, 240, 242),
+                    color: const Color.fromARGB(255, 239, 240, 242),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: const Column(
@@ -121,10 +125,10 @@ class FirstPage extends StatelessWidget {
                   ),
                 ),
               ]),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
-              YourCourses()
+              const YourCourses()
             ]),
           ),
         ),

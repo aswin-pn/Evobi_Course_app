@@ -26,31 +26,31 @@ class _OverviewState extends State<Overview> {
                 height: 35,
                 width: 50,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 232, 233, 237),
+                  color: const Color.fromARGB(255, 232, 233, 237),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: GestureDetector(
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(Icons.arrow_back)),
+                    child: const Icon(Icons.arrow_back)),
               ),
             ),
-            Spacer(),
+            const Spacer(),
           ],
         ),
         body: Column(
           children: [
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
                   child: Text(
                     'VLSI\nDesign 1',
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 10, 20, 10),
                   child: ElevatedButton(
@@ -58,16 +58,16 @@ class _OverviewState extends State<Overview> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      backgroundColor: Color.fromARGB(255, 30, 50, 130),
-                      fixedSize: Size(173, 50),
+                      backgroundColor: const Color.fromARGB(255, 30, 50, 130),
+                      fixedSize: const Size(173, 50),
                     ),
                     onPressed: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => OriginalChallenge()));
+                              builder: (context) => const OriginalChallenge()));
                     },
-                    child: Row(
+                    child: const Row(
                       children: [
                         Text(
                           'REGISTER &\nBEGIN',
@@ -85,13 +85,13 @@ class _OverviewState extends State<Overview> {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
               child: Divider(
                 color: Color.fromARGB(255, 232, 233, 237),
               ),
             ),
-            TabBar(
+            const TabBar(
               dividerColor: Colors.white,
               isScrollable: true,
               labelStyle: TextStyle(fontSize: 28), // Selected tab text size
@@ -104,7 +104,7 @@ class _OverviewState extends State<Overview> {
                 Tab(text: 'Quick'),
               ],
             ),
-            Expanded(
+            const Expanded(
               child: TabBarView(children: [
                 OverviewDescription(),
                 ChallengesPage(),

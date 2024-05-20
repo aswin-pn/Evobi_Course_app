@@ -11,11 +11,11 @@ class SecondPage extends StatelessWidget {
       },
       child: Scaffold(
         appBar: AppBar(
-          actions: [
+          actions: const [
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
                   child: CircleAvatar(
                     radius: 14,
                     child: Icon(Icons.person),
@@ -24,11 +24,9 @@ class SecondPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: 20),
-                Container(
-                  child: Text(
-                    'Arjun',
-                    style: TextStyle(fontSize: 30),
-                  ),
+                Text(
+                  'Arjun',
+                  style: TextStyle(fontSize: 30),
                 ),
                 SizedBox(width: 170),
                 Icon(Icons.close),
@@ -37,18 +35,18 @@ class SecondPage extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(
+        body: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(50, 20, 0, 0),
+              padding: EdgeInsets.fromLTRB(50, 20, 0, 0),
               child: Text(
                 'PROFILE',
                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 0, 150, 0),
+              padding: EdgeInsets.fromLTRB(40, 0, 150, 0),
               child: Divider(
                 color: Colors.black26,
               ),
@@ -56,7 +54,7 @@ class SecondPage extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(50, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
                   child: Text(
                     'STATISTICS',
                     style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
@@ -75,13 +73,13 @@ class SecondPage extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 0, 150, 0),
+              padding: EdgeInsets.fromLTRB(40, 0, 150, 0),
               child: Divider(
                 color: Colors.black26,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(50, 20, 0, 0),
+              padding: EdgeInsets.fromLTRB(50, 20, 0, 0),
               child: Text(
                 'PLACEMENT',
                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
@@ -91,13 +89,13 @@ class SecondPage extends StatelessWidget {
               height: 300,
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 0, 150, 0),
+              padding: EdgeInsets.fromLTRB(40, 0, 150, 0),
               child: Divider(
                 color: Colors.black26,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(50, 0, 0, 0),
+              padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
               child: Text(
                 'Logout',
                 style: TextStyle(color: Colors.redAccent, fontSize: 17),
@@ -105,7 +103,7 @@ class SecondPage extends StatelessWidget {
             ),
             SizedBox(height: 150),
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+              padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
               child: Text(
                 'TERMS & CONDITIONS POLICY',
                 style: TextStyle(fontSize: 10, fontWeight: FontWeight.w200),

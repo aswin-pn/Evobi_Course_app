@@ -7,7 +7,7 @@ class OverviewDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -16,17 +16,17 @@ class OverviewDescription extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(17, 70, 0, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(17, 70, 0, 0),
               child: Text(
                 'Overview description\nVLSI Design 1, or Very Large Scale Integration Design 1, is a foundational course in the field of Electrical Engineering and Computer Science,\n focusing on the principles, methodologies, and tools used in the design\nand implementation of integrated circuits (ICs) at a very large scale.\nThis course typically serves as an introduction to the complex world of\nVLSI design, covering both theoretical concepts and practical applications',
                 style: TextStyle(fontSize: 10, fontWeight: FontWeight.w300),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 38,
             ),
-            Row(
+            const Row(
               children: [
                 SizedBox(
                   width: 4,
@@ -107,24 +107,24 @@ class OverviewDescription extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 40),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 170, 0),
+            const SizedBox(height: 40),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(0, 0, 170, 0),
               child: Text(
                 'PLACEMENTS OFFERED BY',
                 style: TextStyle(fontWeight: FontWeight.w200),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 70,
             ),
             Container(
               height: 300,
               width: 350,
               decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 232, 233, 237),
+                  color: const Color.fromARGB(255, 232, 233, 237),
                   borderRadius: BorderRadius.circular(20)),
-              child: Center(
+              child: const Center(
                   child: Icon(
                 Icons.play_arrow,
                 size: 50,

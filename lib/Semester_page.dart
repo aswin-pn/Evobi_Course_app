@@ -20,26 +20,26 @@ class _SemesterPageState extends State<SemesterPage> {
                 height: 35,
                 width: 50,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 232, 233, 237),
+                  color: const Color.fromARGB(255, 232, 233, 237),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: GestureDetector(
-                  child: Icon(Icons.arrow_back),
+                  child: const Icon(Icons.arrow_back),
                   onTap: () {
                     Navigator.pop(context);
                   },
                 ),
               ),
             ),
-            Spacer(),
+            const Spacer(),
           ],
         ),
         body: SingleChildScrollView(
           child: Column(children: [
-            Row(
+            const Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
                   child: Text(
                     'VLSI\nDesign 1',
                     style: TextStyle(fontSize: 20),
@@ -47,8 +47,8 @@ class _SemesterPageState extends State<SemesterPage> {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
               child: Divider(
                 color: Colors.black26,
               ),
@@ -61,12 +61,12 @@ class _SemesterPageState extends State<SemesterPage> {
                     padding: const EdgeInsets.fromLTRB(30, 20, 0, 0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       height: 100,
                       width: 50,
-                      child: Column(
+                      child: const Column(
                         children: [
                           SizedBox(
                             height: 10,
@@ -84,12 +84,12 @@ class _SemesterPageState extends State<SemesterPage> {
                     padding: const EdgeInsets.fromLTRB(25, 20, 0, 0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       height: 100,
                       width: 50,
-                      child: Column(
+                      child: const Column(
                         children: [
                           SizedBox(
                             height: 10,
@@ -108,12 +108,12 @@ class _SemesterPageState extends State<SemesterPage> {
                     child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.black),
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       height: 100,
                       width: 50,
-                      child: Column(
+                      child: const Column(
                         children: [
                           SizedBox(
                             height: 10,
@@ -131,12 +131,12 @@ class _SemesterPageState extends State<SemesterPage> {
                     padding: const EdgeInsets.fromLTRB(25, 20, 0, 0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       height: 100,
                       width: 50,
-                      child: Column(
+                      child: const Column(
                         children: [
                           SizedBox(
                             height: 10,
@@ -154,12 +154,12 @@ class _SemesterPageState extends State<SemesterPage> {
                     padding: const EdgeInsets.fromLTRB(25, 20, 0, 0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       height: 100,
                       width: 50,
-                      child: Column(
+                      child: const Column(
                         children: [
                           SizedBox(
                             height: 10,
@@ -177,12 +177,12 @@ class _SemesterPageState extends State<SemesterPage> {
                     padding: const EdgeInsets.fromLTRB(25, 20, 0, 0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       height: 100,
                       width: 50,
-                      child: Column(
+                      child: const Column(
                         children: [
                           SizedBox(
                             height: 10,
@@ -200,12 +200,12 @@ class _SemesterPageState extends State<SemesterPage> {
                     padding: const EdgeInsets.fromLTRB(25, 20, 0, 0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       height: 100,
                       width: 50,
-                      child: Column(
+                      child: const Column(
                         children: [
                           SizedBox(
                             height: 10,
@@ -223,12 +223,12 @@ class _SemesterPageState extends State<SemesterPage> {
                     padding: const EdgeInsets.fromLTRB(25, 20, 0, 0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       height: 100,
                       width: 50,
-                      child: Column(
+                      child: const Column(
                         children: [
                           SizedBox(
                             height: 10,
@@ -245,16 +245,16 @@ class _SemesterPageState extends State<SemesterPage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
               child: Divider(
                 color: Colors.black26,
               ),
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 30, 0, 0),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(30, 30, 0, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -269,7 +269,7 @@ class _SemesterPageState extends State<SemesterPage> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 150,
                 ),
                 ElevatedButton(
@@ -277,16 +277,16 @@ class _SemesterPageState extends State<SemesterPage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    backgroundColor: Color.fromARGB(255, 30, 50, 130),
-                    fixedSize: Size(144, 30),
+                    backgroundColor: const Color.fromARGB(255, 30, 50, 130),
+                    fixedSize: const Size(144, 30),
                   ),
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => LastPage()),
+                      MaterialPageRoute(builder: (context) => const LastPage()),
                     );
                   },
-                  child: Row(
+                  child: const Row(
                     children: [
                       Text(
                         'CONTINUE',
@@ -303,7 +303,7 @@ class _SemesterPageState extends State<SemesterPage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
@@ -317,10 +317,10 @@ class _SemesterPageState extends State<SemesterPage> {
                       width: 130,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(27),
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                      child: const Padding(
+                        padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
                         child: Column(
                           children: [
                             Text(
@@ -328,7 +328,7 @@ class _SemesterPageState extends State<SemesterPage> {
                               style: TextStyle(fontSize: 15),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
+                              padding: EdgeInsets.fromLTRB(30, 0, 30, 0),
                               child: Divider(
                                 color: Colors.black45,
                               ),
@@ -349,10 +349,10 @@ class _SemesterPageState extends State<SemesterPage> {
                       width: 130,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(27),
-                        color: Color.fromARGB(255, 232, 233, 237),
+                        color: const Color.fromARGB(255, 232, 233, 237),
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                      child: const Padding(
+                        padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
                         child: Column(
                           children: [
                             Text(
@@ -360,7 +360,7 @@ class _SemesterPageState extends State<SemesterPage> {
                               style: TextStyle(fontSize: 15),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
+                              padding: EdgeInsets.fromLTRB(30, 0, 30, 0),
                               child: Divider(
                                 color: Colors.black45,
                               ),
@@ -374,24 +374,24 @@ class _SemesterPageState extends State<SemesterPage> {
                 )
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Text(
                 'The Evobi Course App is designed to\nprovide students with a seamless and\ninteractive learning experience. Whether you are a high school student, college student, or a lifelong learner, this app offers a variety of courses and subjects to enhance your knowledge and skills. Access a wide range of courses across multiple disciplines including science, technology, engineering, mathematics, humanities, and arts. Courses are designed by industry experts and experienced educators to ensure high-quality content.',
                 style: TextStyle(fontWeight: FontWeight.w200),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 250, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(0, 0, 250, 0),
               child: Text(
                 'MATERIALS',
                 style: TextStyle(fontWeight: FontWeight.w400, fontSize: 20),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
@@ -403,8 +403,8 @@ class _SemesterPageState extends State<SemesterPage> {
                     height: 100,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Color.fromARGB(255, 232, 233, 237)),
-                    child: Icon(
+                        color: const Color.fromARGB(255, 232, 233, 237)),
+                    child: const Icon(
                       Icons.file_copy,
                       size: 30,
                     ),
@@ -417,8 +417,8 @@ class _SemesterPageState extends State<SemesterPage> {
                     height: 100,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Color.fromARGB(255, 232, 233, 237)),
-                    child: Icon(
+                        color: const Color.fromARGB(255, 232, 233, 237)),
+                    child: const Icon(
                       Icons.tv_outlined,
                       size: 30,
                     ),

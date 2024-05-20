@@ -15,8 +15,8 @@ class _ThirdPageState extends State<ThirdPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(actions: [
-        Row(children: [
+      appBar: AppBar(actions: const [
+        Row(children: const [
           CircleAvatar(
             radius: 14,
             child: Icon(Icons.person),
@@ -36,11 +36,16 @@ class _ThirdPageState extends State<ThirdPage> {
       ]),
       body: SingleChildScrollView(
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
+              transform: GradientRotation(50),
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [Colors.white, Colors.blue.shade100],
+              colors: [
+                Colors.white,
+                Color.fromARGB(255, 199, 215, 231),
+                Color.fromARGB(255, 199, 215, 231)
+              ],
             ),
           ),
           child: Center(
@@ -51,7 +56,7 @@ class _ThirdPageState extends State<ThirdPage> {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(17),
-                      color: Color(0xFFF2F4F7),
+                      color: const Color(0xFFF2F4F7),
                     ),
                     height: 50,
                     width: 400,
@@ -75,7 +80,7 @@ class _ThirdPageState extends State<ThirdPage> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   children: [
                     _buildSelectableContainer(
@@ -105,10 +110,10 @@ class _ThirdPageState extends State<ThirdPage> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                CoursesSubjects(),
+                const CoursesSubjects(),
               ],
             ),
           ),
@@ -139,7 +144,7 @@ class _ThirdPageState extends State<ThirdPage> {
           width: width,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            color: Color(0xFFF2F4F7),
+            color: const Color(0xFFF2F4F7),
             border: Border.all(
               color: selectedContainerIndex == index
                   ? Colors.black

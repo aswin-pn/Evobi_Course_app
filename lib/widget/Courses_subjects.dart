@@ -1,5 +1,5 @@
+import 'package:evobi_course_app/Semester_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class CoursesSubjects extends StatelessWidget {
   const CoursesSubjects({super.key});
@@ -12,14 +12,14 @@ class CoursesSubjects extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 240,
+            height: 260,
             width: 330,
             decoration: BoxDecoration(
-              gradient: LinearGradient(
+              gradient: const LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Color(0x80EFF5FB),
+                  Color.fromARGB(128, 208, 213, 218),
                   Color(0x80FFFFFF),
                 ],
               ),
@@ -28,103 +28,111 @@ class CoursesSubjects extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 30),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(12, 10, 0, 0),
+                const SizedBox(height: 10),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(17, 0, 0, 0),
                   child: Text(
                     'Year 1',
-                    style: TextStyle(fontSize: 17),
+                    style: TextStyle(fontSize: 22),
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Divider(
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 19,
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                   child: Stack(children: [
                     Container(
-                      height: 120,
-                      width: 260,
+                      height: 130,
+                      width: 270,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Color.fromARGB(255, 208, 200, 168),
+                        color: const Color.fromARGB(255, 227, 224, 214),
                       ),
                     ),
                     Column(
                       children: [
-                        Container(
-                            height: 120,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white),
-                              gradient: LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                                colors: [
-                                  Color.fromARGB(255, 218, 184, 184),
-                                  // 0x80 is the alpha value for 50% opacity
-                                  Colors.white
-                                  // 0x80 is the alpha value for 50% opacity
-                                ],
-                              ),
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: Text(
-                                    'VLSI\nDesign 1',
-                                    style: TextStyle(fontSize: 15),
-                                  ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const SemesterPage()));
+                          },
+                          child: Container(
+                              height: 130,
+                              width: 250,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                gradient: const LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color.fromARGB(223, 241, 207, 201),
+                                    Color.fromARGB(255, 243, 248, 247),
+                                    Colors.white
+                                  ],
                                 ),
-                                Row(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          10, 0, 0, 0),
-                                      child: Text(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: const Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.all(13.0),
+                                    child: Text(
+                                      'VLSI\nDesign 1',
+                                      style: TextStyle(fontSize: 19),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(15, 0, 0, 0),
+                                        child: Text(
+                                          '3',
+                                          style: TextStyle(fontSize: 20),
+                                        ),
+                                      ),
+                                      Text(
+                                        'Mi ',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
                                         '3',
                                         style: TextStyle(fontSize: 20),
                                       ),
-                                    ),
-                                    Text(
-                                      'Mi ',
-                                    ),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
-                                    Text(
-                                      '3',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
-                                    Text(
-                                      'Ch',
-                                    ),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
-                                    Text(
-                                      '3',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
-                                    Text(
-                                      'St',
-                                    ),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
-                                  ],
-                                )
-                              ],
-                            )),
+                                      Text(
+                                        'Ch',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        '3',
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                      Text(
+                                        'St',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              )),
+                        ),
                       ],
                     ),
                   ]),
@@ -134,114 +142,391 @@ class CoursesSubjects extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           Container(
-            height: 220,
+            height: 260,
             width: 330,
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.white),
-              color: Color.fromARGB(255, 239, 240, 242),
+              //border: Border.all(color: Colors.white),
+              gradient: const LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color.fromARGB(128, 208, 213, 218),
+                  Color(0x80FFFFFF),
+                ],
+              ),
               borderRadius: BorderRadius.circular(30),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 5),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(12, 10, 0, 0),
+                const SizedBox(height: 10),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(17, 0, 0, 0),
                   child: Text(
                     'Year 2',
-                    style: TextStyle(fontSize: 17),
+                    style: TextStyle(fontSize: 22),
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Divider(
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 18,
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                   child: Stack(children: [
                     Container(
-                      height: 120,
-                      width: 260,
+                      height: 130,
+                      width: 270,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Colors.black,
+                        color: const Color.fromARGB(223, 234, 221, 219),
                       ),
                     ),
                     Column(
                       children: [
-                        Container(
-                            height: 120,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white),
-                              gradient: LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                                colors: [
-                                  Color.fromARGB(208, 174, 205, 229),
-                                  const Color.fromARGB(218, 255, 255, 255),
-                                  // 0x80 is the alpha value for 50% opacity
-                                  Color.fromARGB(208, 137, 182, 216)
-                                  // 0x80 is the alpha value for 50% opacity
-                                ],
-                              ),
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: Text(
-                                    'VLSI\nDesign 1',
-                                    style: TextStyle(fontSize: 15),
-                                  ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const SemesterPage()));
+                          },
+                          child: Container(
+                              height: 130,
+                              width: 250,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                gradient: const LinearGradient(
+                                  transform: GradientRotation(350),
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color.fromARGB(208, 184, 226, 244),
+                                    Color.fromARGB(255, 255, 255, 255)
+                                  ],
                                 ),
-                                Row(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          10, 0, 0, 0),
-                                      child: Text(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: const Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.all(13.0),
+                                    child: Text(
+                                      'VLSI\nDesign 1',
+                                      style: TextStyle(fontSize: 19),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(13, 0, 0, 0),
+                                        child: Text(
+                                          '3',
+                                          style: TextStyle(fontSize: 20),
+                                        ),
+                                      ),
+                                      Text(
+                                        'Mi ',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
                                         '3',
                                         style: TextStyle(fontSize: 20),
                                       ),
-                                    ),
-                                    Text(
-                                      'Mi ',
-                                    ),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
-                                    Text(
-                                      '3',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
-                                    Text(
-                                      'Ch',
-                                    ),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
-                                    Text(
-                                      '3',
-                                      style: TextStyle(fontSize: 20),
-                                    ),
-                                    Text(
-                                      'St',
-                                    ),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                      Text(
+                                        'Ch',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        '3',
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                      Text(
+                                        'St',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              )),
+                        ),
+                      ],
+                    ),
+                  ]),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          Container(
+            height: 260,
+            width: 330,
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color.fromARGB(128, 208, 213, 218),
+                  Color(0x80FFFFFF),
+                ],
+              ),
+              borderRadius: BorderRadius.circular(30),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(height: 10),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(17, 0, 0, 0),
+                  child: Text(
+                    'Year 3',
+                    style: TextStyle(fontSize: 22),
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  child: Divider(
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(
+                  height: 19,
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                  child: Stack(children: [
+                    Container(
+                      height: 130,
+                      width: 270,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: const Color.fromARGB(255, 227, 224, 214),
+                      ),
+                    ),
+                    Column(
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const SemesterPage()));
+                          },
+                          child: Container(
+                              height: 130,
+                              width: 250,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                gradient: const LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color.fromARGB(223, 241, 207, 201),
+                                    Color.fromARGB(255, 243, 248, 247),
+                                    Colors.white
                                   ],
-                                )
-                              ],
-                            )),
+                                ),
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: const Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.all(13.0),
+                                    child: Text(
+                                      'VLSI\nDesign 1',
+                                      style: TextStyle(fontSize: 19),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(15, 0, 0, 0),
+                                        child: Text(
+                                          '3',
+                                          style: TextStyle(fontSize: 20),
+                                        ),
+                                      ),
+                                      Text(
+                                        'Mi ',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        '3',
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                      Text(
+                                        'Ch',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        '3',
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                      Text(
+                                        'St',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              )),
+                        ),
+                      ],
+                    ),
+                  ]),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          Container(
+            height: 260,
+            width: 330,
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color.fromARGB(128, 208, 213, 218),
+                  Color(0x80FFFFFF),
+                ],
+              ),
+              borderRadius: BorderRadius.circular(30),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(height: 10),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(17, 0, 0, 0),
+                  child: Text(
+                    'Year 4',
+                    style: TextStyle(fontSize: 22),
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  child: Divider(
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(
+                  height: 19,
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                  child: Stack(children: [
+                    Container(
+                      height: 130,
+                      width: 270,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: const Color.fromARGB(255, 227, 224, 214),
+                      ),
+                    ),
+                    Column(
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const SemesterPage()));
+                          },
+                          child: Container(
+                              height: 130,
+                              width: 250,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                gradient: const LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color.fromARGB(208, 184, 226, 244),
+                                    Color.fromARGB(255, 255, 255, 255)
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: const Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.all(13.0),
+                                    child: Text(
+                                      'VLSI\nDesign 1',
+                                      style: TextStyle(fontSize: 19),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(15, 0, 0, 0),
+                                        child: Text(
+                                          '3',
+                                          style: TextStyle(fontSize: 20),
+                                        ),
+                                      ),
+                                      Text(
+                                        'Mi ',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        '3',
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                      Text(
+                                        'Ch',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        '3',
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                      Text(
+                                        'St',
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              )),
+                        ),
                       ],
                     ),
                   ]),

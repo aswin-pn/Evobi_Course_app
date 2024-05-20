@@ -21,8 +21,8 @@ class ChallengesPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 90, 0, 0),
+                  const Padding(
+                    padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
                     child: Column(
                       children: [
                         Text(
@@ -40,7 +40,7 @@ class ChallengesPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 25,
                   ),
                   Align(
@@ -53,7 +53,7 @@ class ChallengesPage extends StatelessWidget {
                             height: 335,
                             width: 255,
                             decoration: BoxDecoration(
-                              gradient: LinearGradient(
+                              gradient: const LinearGradient(
                                 begin: Alignment.topLeft,
                                 end: Alignment.bottomRight,
                                 colors: [
@@ -63,8 +63,8 @@ class ChallengesPage extends StatelessWidget {
                               ),
                               borderRadius: BorderRadius.circular(25),
                             ),
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(17, 20, 12, 0),
+                            child: const Padding(
+                              padding: EdgeInsets.fromLTRB(17, 20, 12, 0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -97,8 +97,8 @@ class ChallengesPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     //mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 40, 0, 0),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(20, 40, 0, 0),
                         child: Column(
                           children: [
                             Text(
@@ -116,7 +116,7 @@ class ChallengesPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 25,
                       ),
                       Padding(
@@ -127,7 +127,7 @@ class ChallengesPage extends StatelessWidget {
                               height: 335,
                               width: 255,
                               decoration: BoxDecoration(
-                                gradient: LinearGradient(
+                                gradient: const LinearGradient(
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
                                   colors: [
@@ -137,9 +137,8 @@ class ChallengesPage extends StatelessWidget {
                                 ),
                                 borderRadius: BorderRadius.circular(25),
                               ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(17, 20, 12, 0),
+                              child: const Padding(
+                                padding: EdgeInsets.fromLTRB(17, 20, 12, 0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -167,7 +166,7 @@ class ChallengesPage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Column(
@@ -176,7 +175,7 @@ class ChallengesPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     //mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 25,
                       ),
                       Padding(
@@ -187,7 +186,7 @@ class ChallengesPage extends StatelessWidget {
                               height: 335,
                               width: 255,
                               decoration: BoxDecoration(
-                                gradient: LinearGradient(
+                                gradient: const LinearGradient(
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
                                   colors: [
@@ -197,9 +196,8 @@ class ChallengesPage extends StatelessWidget {
                                 ),
                                 borderRadius: BorderRadius.circular(25),
                               ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(17, 20, 12, 0),
+                              child: const Padding(
+                                padding: EdgeInsets.fromLTRB(17, 20, 12, 0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -227,7 +225,7 @@ class ChallengesPage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Column(
@@ -236,7 +234,7 @@ class ChallengesPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     //mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 25,
                       ),
                       Padding(
@@ -247,7 +245,7 @@ class ChallengesPage extends StatelessWidget {
                               height: 335,
                               width: 255,
                               decoration: BoxDecoration(
-                                gradient: LinearGradient(
+                                gradient: const LinearGradient(
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
                                   colors: [
@@ -257,9 +255,8 @@ class ChallengesPage extends StatelessWidget {
                                 ),
                                 borderRadius: BorderRadius.circular(25),
                               ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(17, 20, 12, 0),
+                              child: const Padding(
+                                padding: EdgeInsets.fromLTRB(17, 20, 12, 0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [

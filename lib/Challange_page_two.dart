@@ -22,8 +22,8 @@ class ChallengesPageTwo extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 90, 0, 0),
+                  const Padding(
+                    padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
                     child: Column(
                       children: [
                         Text(
@@ -41,7 +41,7 @@ class ChallengesPageTwo extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 25,
                   ),
                   Align(
@@ -58,7 +58,7 @@ class ChallengesPageTwo extends StatelessWidget {
                                 begin: Alignment.topLeft,
                                 end: Alignment.bottomRight,
                                 colors: [
-                                  Color.fromARGB(218, 229, 233, 229),
+                                  const Color.fromARGB(218, 229, 233, 229),
                                   Colors.green.shade200,
                                 ],
                               ),
@@ -69,20 +69,20 @@ class ChallengesPageTwo extends StatelessWidget {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Challenge 1',
                                     style: TextStyle(
                                         fontSize: 25,
                                         fontWeight: FontWeight.bold),
                                   ),
-                                  SizedBox(height: 10),
-                                  Text(
+                                  const SizedBox(height: 10),
+                                  const Text(
                                     'In this challenge, you will explore the core principles of VLSI design, including its history, evolution, and key applications. You will learn about the essential components of VLSI.',
                                     style: TextStyle(
                                         fontSize: 16,
                                         fontWeight: FontWeight.w300),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 25,
                                   ),
                                   Padding(
@@ -94,7 +94,7 @@ class ChallengesPageTwo extends StatelessWidget {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  SemesterPage()),
+                                                  const SemesterPage()),
                                         );
                                       },
                                       style: ElevatedButton.styleFrom(
@@ -102,17 +102,17 @@ class ChallengesPageTwo extends StatelessWidget {
                                             .transparent, // No background color
                                         foregroundColor:
                                             Colors.black, // Text color
-                                        side: BorderSide(
+                                        side: const BorderSide(
                                             color:
                                                 Colors.black), // Border color
-                                        fixedSize:
-                                            Size(200, 50), // Width and height
+                                        fixedSize: const Size(
+                                            200, 50), // Width and height
                                         shape: RoundedRectangleBorder(
                                           borderRadius: BorderRadius.circular(
                                               10), // Border radius
                                         ),
                                       ),
-                                      child: Center(
+                                      child: const Center(
                                         child: Text(
                                           'Practice',
                                           style: TextStyle(fontSize: 16),
@@ -136,8 +136,8 @@ class ChallengesPageTwo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     //mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 40, 0, 0),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(20, 40, 0, 0),
                         child: Column(
                           children: [
                             Text(
@@ -155,7 +155,7 @@ class ChallengesPageTwo extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 25,
                       ),
                       Padding(
@@ -170,7 +170,7 @@ class ChallengesPageTwo extends StatelessWidget {
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
                                   colors: [
-                                    Color.fromARGB(218, 229, 233, 229),
+                                    const Color.fromARGB(218, 229, 233, 229),
                                     Colors.orange.shade100
                                   ],
                                 ),
@@ -182,14 +182,14 @@ class ChallengesPageTwo extends StatelessWidget {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'Challenge 1',
                                       style: TextStyle(
                                           fontSize: 25,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    SizedBox(height: 10),
-                                    Text(
+                                    const SizedBox(height: 10),
+                                    const Text(
                                       'In this challenge, you will explore the core principles of VLSI design, including its history, evolution, and key applications. You will learn about the essential components of VLSI.',
                                       style: TextStyle(
                                           fontSize: 16,
@@ -204,7 +204,7 @@ class ChallengesPageTwo extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    SemesterPage()),
+                                                    const SemesterPage()),
                                           );
                                         },
                                         style: ElevatedButton.styleFrom(
@@ -215,7 +215,7 @@ class ChallengesPageTwo extends StatelessWidget {
                                           shadowColor:
                                               Colors.transparent, // No shadow
                                           elevation: 0, // No elevation
-                                          padding: EdgeInsets.symmetric(
+                                          padding: const EdgeInsets.symmetric(
                                               vertical: 15,
                                               horizontal: 70), // Padding
                                           shape: RoundedRectangleBorder(
@@ -223,7 +223,7 @@ class ChallengesPageTwo extends StatelessWidget {
                                                 10), // Border radius
                                           ),
                                         ),
-                                        child: Text(
+                                        child: const Text(
                                           'Retake',
                                           style: TextStyle(fontSize: 16),
                                         ),
@@ -240,7 +240,7 @@ class ChallengesPageTwo extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Column(
@@ -249,7 +249,7 @@ class ChallengesPageTwo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     //mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 25,
                       ),
                       Padding(
@@ -260,7 +260,7 @@ class ChallengesPageTwo extends StatelessWidget {
                               height: 335,
                               width: 255,
                               decoration: BoxDecoration(
-                                gradient: LinearGradient(
+                                gradient: const LinearGradient(
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
                                   colors: [
@@ -276,14 +276,14 @@ class ChallengesPageTwo extends StatelessWidget {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'Challenge 1',
                                       style: TextStyle(
                                           fontSize: 25,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    SizedBox(height: 10),
-                                    Text(
+                                    const SizedBox(height: 10),
+                                    const Text(
                                       'In this challenge, you will explore the core principles of VLSI design, including its history, evolution, and key applications. You will learn about the essential components of VLSI.',
                                       style: TextStyle(
                                           fontSize: 16,
@@ -298,20 +298,20 @@ class ChallengesPageTwo extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    SemesterPage()),
+                                                    const SemesterPage()),
                                           );
                                         },
                                         style: ElevatedButton.styleFrom(
                                           backgroundColor: Colors
                                               .white10, // Background color
                                           foregroundColor: Colors.black,
-                                          side: BorderSide(
+                                          side: const BorderSide(
                                               color:
                                                   Colors.black), // Text color
                                           shadowColor:
                                               Colors.transparent, // No shadow
                                           elevation: 0, // No elevation
-                                          padding: EdgeInsets.symmetric(
+                                          padding: const EdgeInsets.symmetric(
                                               vertical: 15,
                                               horizontal: 70), // Padding
                                           shape: RoundedRectangleBorder(
@@ -319,7 +319,7 @@ class ChallengesPageTwo extends StatelessWidget {
                                                 10), // Border radius
                                           ),
                                         ),
-                                        child: Text(
+                                        child: const Text(
                                           'Start',
                                           style: TextStyle(fontSize: 16),
                                         ),
@@ -336,7 +336,7 @@ class ChallengesPageTwo extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Column(
@@ -345,7 +345,7 @@ class ChallengesPageTwo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     //mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 25,
                       ),
                       Padding(
@@ -356,7 +356,7 @@ class ChallengesPageTwo extends StatelessWidget {
                               height: 335,
                               width: 255,
                               decoration: BoxDecoration(
-                                gradient: LinearGradient(
+                                gradient: const LinearGradient(
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
                                   colors: [
@@ -372,7 +372,7 @@ class ChallengesPageTwo extends StatelessWidget {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Row(
+                                    const Row(
                                       children: [
                                         Text(
                                           'Challenge 1',
@@ -386,8 +386,8 @@ class ChallengesPageTwo extends StatelessWidget {
                                         Icon(Icons.lock_outline)
                                       ],
                                     ),
-                                    SizedBox(height: 10),
-                                    Text(
+                                    const SizedBox(height: 10),
+                                    const Text(
                                       'In this challenge, you will explore the core principles of VLSI design, including its history, evolution, and key applications. You will learn about the essential components of VLSI.',
                                       style: TextStyle(
                                           fontSize: 16,
@@ -402,20 +402,20 @@ class ChallengesPageTwo extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    SemesterPage()),
+                                                    const SemesterPage()),
                                           );
                                         },
                                         style: ElevatedButton.styleFrom(
                                           backgroundColor: Colors
                                               .white10, // Background color
                                           foregroundColor: Colors.black,
-                                          side: BorderSide(
+                                          side: const BorderSide(
                                               color:
                                                   Colors.black), // Text color
                                           shadowColor:
                                               Colors.transparent, // No shadow
                                           elevation: 0, // No elevation
-                                          padding: EdgeInsets.symmetric(
+                                          padding: const EdgeInsets.symmetric(
                                               vertical: 15,
                                               horizontal: 70), // Padding
                                           shape: RoundedRectangleBorder(
@@ -423,7 +423,7 @@ class ChallengesPageTwo extends StatelessWidget {
                                                 10), // Border radius
                                           ),
                                         ),
-                                        child: Text(
+                                        child: const Text(
                                           'Start',
                                           style: TextStyle(fontSize: 16),
                                         ),

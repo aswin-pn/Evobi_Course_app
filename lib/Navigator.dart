@@ -53,9 +53,9 @@ class EventsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Events Page'),
+        title: const Text('Events Page'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Welcome to the Events Page'),
       ),
     );

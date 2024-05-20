@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
               seedColor: Color.fromARGB(255, 193, 200, 206)),
           useMaterial3: true,
         ),
+        debugShowCheckedModeBanner: false,
         home: NavigationPage());
   }
 }

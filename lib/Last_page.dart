@@ -15,31 +15,31 @@ class LastPage extends StatelessWidget {
               height: 35,
               width: 50,
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 232, 233, 237),
+                color: const Color.fromARGB(255, 232, 233, 237),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: GestureDetector(
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(Icons.arrow_back)),
+                  child: const Icon(Icons.arrow_back)),
             ),
           ),
-          Spacer(),
+          const Spacer(),
         ],
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Colors.white, const Color.fromARGB(255, 191, 215, 235)],
+            colors: [Colors.white, Color.fromARGB(255, 191, 215, 235)],
           ),
         ),
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
               child: Align(
                 alignment: Alignment.topLeft,
                 child: Text(
@@ -48,7 +48,7 @@ class LastPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -57,19 +57,21 @@ class LastPage extends StatelessWidget {
                 color: Colors.grey.shade300,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 70,
             ),
             Container(
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.white),
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
+                  transform: GradientRotation(60),
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
                     Colors.white,
                     // 0x80 is the alpha value for 50% opacity
-                    Color.fromARGB(208, 148, 146, 147)
+                    Color.fromARGB(208, 192, 189, 190),
+                    Color.fromARGB(208, 192, 189, 190)
                     // 0x80 is the alpha value for 50% opacity
                   ],
                 ),
@@ -79,19 +81,19 @@ class LastPage extends StatelessWidget {
               width: 300,
               child: Column(
                 children: [
-                  Center(
+                  const Center(
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 100, 0, 0),
+                      padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
                       child: Text(
                         'Heads up!',
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 50,
-                            color: Color.fromARGB(185, 92, 151, 177)),
+                            color: Color.fromARGB(184, 67, 92, 102)),
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
                   ElevatedButton.icon(
@@ -99,20 +101,21 @@ class LastPage extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      backgroundColor: Color.fromARGB(255, 30, 50, 130),
-                      fixedSize: Size(144, 35),
+                      backgroundColor: const Color.fromARGB(255, 30, 50, 130),
+                      fixedSize: const Size(144, 35),
                     ),
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => FirstPage()),
+                        MaterialPageRoute(
+                            builder: (context) => const FirstPage()),
                       );
                     },
-                    label: Text(
+                    label: const Text(
                       'Continue',
                       style: TextStyle(color: Colors.white, fontSize: 15),
                     ),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.arrow_back,
                       color: Colors.white,
                       size: 25,
