@@ -1,6 +1,13 @@
-import 'package:evobi_course_app/widget/Courses_subjects.dart';
+import 'package:evobi_course_app/First_page.dart';
+import 'package:evobi_course_app/Second_page.dart';
+import 'package:evobi_course_app/filter_page.dart';
+import 'package:evobi_course_app/widget/Year_four.dart';
+import 'package:evobi_course_app/widget/Year_one.dart.dart';
+import 'package:evobi_course_app/widget/Year_three.dart';
+import 'package:evobi_course_app/widget/Year_two.dart';
 import 'package:evobi_course_app/widget/Your_courses.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class ThirdPage extends StatefulWidget {
   const ThirdPage({super.key});
@@ -16,7 +23,7 @@ class _ThirdPageState extends State<ThirdPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(actions: const [
-        Row(children: const [
+        Row(children: [
           CircleAvatar(
             radius: 14,
             child: Icon(Icons.person),
@@ -99,21 +106,32 @@ class _ThirdPageState extends State<ThirdPage> {
                       50,
                       10,
                     ),
-                    _buildSelectableContainer(
-                      context,
-                      2,
-                      null,
-                      50,
-                      50,
-                      10,
-                      icon: Icons.filter_alt_outlined,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => FilterPage()),
+                        );
+                      },
+                      child: _buildSelectableContainer(
+                        context,
+                        2,
+                        null,
+                        50,
+                        50,
+                        10,
+                        icon: Icons.filter_alt_outlined,
+                      ),
                     ),
                   ],
                 ),
                 const SizedBox(
                   height: 20,
                 ),
-                const CoursesSubjects(),
+                const YearOne(),
+                const YearTwo(),
+                const YearThree(),
+                const YearFour(),
               ],
             ),
           ),
@@ -138,6 +156,12 @@ class _ThirdPageState extends State<ThirdPage> {
           setState(() {
             selectedContainerIndex = index;
           });
+          index == 2
+              ? Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FilterPage()),
+                )
+              : null;
         },
         child: Container(
           height: height,
